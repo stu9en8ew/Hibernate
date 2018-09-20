@@ -1,0 +1,24 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+    <hibernate-mapping>
+        <class name="com.beije.model.Professione" table="PROFESSIONE">
+            <id name="id" column="ID" type="integer"></id>
+            <property name="nome" column="PROFESSIONE" type="string" />
+            
+			<!-- <bag name="utenti">
+				<key column="fk_professioni"></key>
+				<one-to-many class="com.beije.Utente"></one-to-many>
+			</bag>--> 
+			
+			
+			<!-- <bag name="utenti" table="">
+				<key column="fk_professioni"></key>
+				<many-to-many class="com.beije.Utente"></many-to-many>
+			</bag>-->     
+			
+        </class>
+        
+    </hibernate-mapping>
